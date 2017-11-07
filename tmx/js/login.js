@@ -1,5 +1,5 @@
 
-$(".ipt").click(function(){
+$("form").submit(function(){
 	var names=$(".t1").val();
 	var pass=$(".t3").val();
 	var str=document.cookie;
@@ -16,8 +16,9 @@ $(".ipt").click(function(){
 	 	 }
 	 }
 	 if(names==iname&&pass==ipass){
-          location.href="index.html";
+        return true;
 	 }
+	 return false;
 })
 $(".t11").val(checkNumber());
 function rand(min,max){
@@ -37,12 +38,6 @@ function rand(min,max){
 	}	 
 	$(".t11").click(function(){
 		$(this).val(checkNumber());
-	})
-	$(".ipt").click(function(){
-		if($(".s1").html()=="合法"&&$(".s4").html()=="密码一致"){
-			document.cookie="uname="+$(".t1").val();
-            document.cookie="upwd="+$(".t3").val();
-		}
 	})
 	$(".t11").hover(function(){
 		$(this).next().show();

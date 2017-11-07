@@ -91,11 +91,13 @@ function rand(min,max){
 	$(".t11").click(function(){
 		$(this).val(checkNumber());
 	})
-	$(".ipt").click(function(){
+	$("form").submit(function(){
 		if($(".s1").html()=="合法"&&$(".s4").html()=="密码一致"){
 			document.cookie="uname="+$(".t1").val();
             document.cookie="upwd="+$(".t3").val();
-            location.href="login.html";
+            return true;
+		}else{
+			return false;
 		}
 	})
 	var flag=true;
