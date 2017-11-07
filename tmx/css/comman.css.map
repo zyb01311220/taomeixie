@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,oHAA4F;EACxF,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;;AAEb,CAAC;EACG,eAAe,EAAE,IAAI;;AAEzB,MAAK;EACD,UAAU,EAAE,IAAI;;AAEpB,GAAG;EACC,MAAM,EAAC,IAAI;;AAEf,IAAI;EACA,WAAW,EAAE,YAAY",
+"sources": ["../scss/comman.scss"],
+"names": [],
+"file": "comman.css"
+}
